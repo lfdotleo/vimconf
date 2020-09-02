@@ -1,4 +1,4 @@
-"========================================================== setting =========================================================
+"========================================================== Setting =========================================================
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -163,7 +163,7 @@ function! HasPaste()
     return ''
 endfunction
 
-"========================================================== key mapping ==========================================================
+"========================================================== Key Mapping ==========================================================
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
@@ -177,39 +177,41 @@ map S :w<CR>
 map R :source $MYVIMRC<CR>
 map J 5j
 map K 5k
-map ; :
 
-" Fast split windows
+" Buffer
+" :e open the file buffer
+" :enew create a new buffer
+" :bd close the file buffer
+" :b<number> switch number buffer
+nnoremap <silent> <leader>bl :ls<CR>
+nnoremap <silent> <leader>be :enew<CR>
+nnoremap <silent> <leader>l :bnext<CR>
+nnoremap <silent> <leader>h :bprevious<CR>
+nnoremap <silent> <leader>bd :bdelete<CR>
+nnoremap <silent> <leader>bD :bdelete!<CR>
+
+" Window
 map <leader>sl :set splitright<CR>:vsplit <C-r>=expand("%:p:h")<cr>/
 map <leader>sh :set nosplitright<CR>:vsplit <C-r>=expand("%:p:h")<cr>/
 map <leader>sj :set nosplitbelow<CR>:split <C-r>=expand("%:p:h")<cr>/
 map <leader>sk :set splitbelow<CR>:split <C-r>=expand("%:p:h")<cr>/
 
-
-" Smart way to move between split windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Swap split windows
 map <leader>s, <C-w>t<C-w>H
 map <leader>s. <C-w>t<C-w>K
 
-" Fast resize split windows
-map <up> :res +5<CR>
-map <down> :res -5<CR>
-map <left> :vertical resize-5<CR>
-map <right> :vertical resize+5<CR>
+map <leader><Up> :res +5<CR>
+map <leader><Down> :res -5<CR>
+map <leader><Left> :vertical resize+5<CR>
+map <leader><Right> :vertical resize-5<CR>
 
-" Opens a new tab with the current buffer's path
-" Super useful when editing files in the same directory
+" Tab
 map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
 
-map <leader>l gt<cr>
-map <leader>h gT<cr>
-
-" Useful mappimap <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 
