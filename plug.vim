@@ -12,7 +12,7 @@ Plug 'junegunn/goyo.vim'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
 
@@ -36,26 +36,43 @@ call plug#end()
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
 
-" ctrlp
-let g:ctrlp_map = '<leader>p'
-let g:ctrlp_cmd = 'CtrlP'
-map <leader>f :CtrlPMRU<CR>
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
-    \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
-    \ }
-let g:ctrlp_working_path_mode=0
-let g:ctrlp_match_window_bottom=1
-let g:ctrlp_max_height=15
-let g:ctrlp_match_window_reversed=0
-let g:ctrlp_mruf_max=500
-let g:ctrlp_follow_symlinks=1
-
+" LeaderF
+map <leader>p :Leaderf file<CR>
+map <leader>f :Leaderf mru<CR>
 " Goyo
 map gy :Goyo<CR>
 
 " NERDTree
-map ff :NERDTree<CR>
+map ff :NERDTreeToggle<CR>
+" show line numbers
+let NERDTreeShowLineNumbers=1
+let NERDTreeAutoCenter=1
+" hidden file
+let NERDTreeShowHidden=1
+" set height
+let NERDTreeWinSize=31
+" auto open 
+let g:nerdtree_tabs_open_on_console_startup=1
+" hidden files list
+let NERDTreeIgnore=['\.pyc','\~$','\.swp']
+" show bookmarks
+let NERDTreeShowBookmarks=1
+" display git info
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
 
 " TagbarToggle
 nmap <F8> :TagbarToggle<CR>
+
+" MarkdownPreview
+nmap <leader>mm :MarkdownPreview<CR>
+nmap <leader>ms :MarkdownPreviewStop<CR>
