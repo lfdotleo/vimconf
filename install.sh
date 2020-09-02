@@ -1,2 +1,2 @@
 #!/bin/sh
-cp .vimrc ~/.vimrc
+cp base.vim ~/.vim/ && cp plug.vim ~/.vim/ && cp .vimrc ~/.vimrc
