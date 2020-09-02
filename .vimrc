@@ -253,5 +253,3 @@ Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'vimwiki/vimwiki'
 
 call plug#end()
-
-"========================================================== setting ==========================================================
