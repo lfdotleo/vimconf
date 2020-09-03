@@ -187,8 +187,8 @@ nnoremap <silent> <leader>bl :ls<CR>
 nnoremap <silent> <leader>be :enew<CR>
 nnoremap <silent> <leader>l :bnext<CR>
 nnoremap <silent> <leader>h :bprevious<CR>
-nnoremap <silent> <leader>bd :bdelete<CR>
-nnoremap <silent> <leader>bD :bdelete!<CR>
+nnoremap <silent> <leader>q :bdelete<CR>
+nnoremap <silent> <leader>Q :bdelete!<CR>
 
 " Window
 map <leader>sl :set splitright<CR>:vsplit <C-r>=expand("%:p:h")<cr>/
