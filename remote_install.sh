@@ -3,7 +3,7 @@
 cat ./base.vim > ~/.vimrc
 
 echo "call plug#begin('~/.vim/plugged')" >> ~/.vimrc
-echo "Plug 'vim-airline/vim-airline" >> ~/.vimrc
+echo "Plug 'vim-airline/vim-airline'" >> ~/.vimrc
 echo "Plug 'mbbill/undotree'" >> ~/.vimrc
 echo "Plug 'itchyny/vim-cursorword'" >> ~/.vimrc
 echo "call plug#end()" >> ~/.vimrc
