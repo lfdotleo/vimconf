@@ -174,8 +174,8 @@ map <silent> <leader><cr> :noh<cr>
 noremap <C-a> 0
 noremap <C-i> ^
 noremap <C-n> $
+map Q :w<CR>
 map X :q<CR>
-map Z :w<CR>
 map S <nop>
 map R :source $MYVIMRC<CR>
 map J 5j

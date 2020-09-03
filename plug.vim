@@ -82,7 +82,7 @@ nmap <leader>ms :MarkdownPreviewStop<CR>
 noremap <F6> :%!npx md-padding<CR>
 
 " tagbar
-nmap <leader>[ :TagbarToggle<CR>
+nmap <leader>j :TagbarToggle<CR>
 let g:tagbar_type_markdown = {
         \ 'ctagstype' : 'markdown',
         \ 'kinds' : [
