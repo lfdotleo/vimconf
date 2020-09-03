@@ -79,6 +79,7 @@ let g:NERDTreeIndicatorMapCustom = {
 " MarkdownPreview
 nmap <leader>mm :MarkdownPreview<CR>
 nmap <leader>ms :MarkdownPreviewStop<CR>
+let g:mkdp_open_to_the_world = 1
 
 " md-padding
 noremap <F6> :%!npx md-padding<CR>
