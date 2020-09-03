@@ -1,2 +1,2 @@
-source ~/.vim/base.vim
-source ~/.vim/plug.vim
+source ~/vimconf/base.vim
+source ~/vimconf/plug.vim

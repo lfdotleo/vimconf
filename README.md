@@ -1,6 +1,6 @@
 ## Use
 
-`git clone  https://github.com/codekeeperjava/vimconf.git` & `./install.sh`
+`cd  && git clone  https://github.com/codekeeperjava/vimconf.git && cd vimconf && ./install.sh`
 
 ## Dependence
 
