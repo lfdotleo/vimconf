@@ -105,7 +105,7 @@ endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf-8
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set fileencodings=ucs-bom,utf-8,latin1,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 
 " Use Unix as the standard file type
@@ -173,6 +173,7 @@ map <silent> <leader><cr> :noh<cr>
 noremap <C-a> 0
 noremap <C-i> ^
 noremap <C-n> $
+tmap <leader>t <C-\><C-n>
 map Q :w<CR>
 map X :q<CR>
 map S <nop>
