@@ -16,6 +16,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 Plug 'majutsushi/tagbar'
+Plug 'mbbill/undotree'
+"Plug 'mhinz/vim-startify'
 
 Plug 'w0rp/ale'
 
@@ -95,3 +97,6 @@ let g:tagbar_type_markdown = {
 " airline
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
+
+" undo
+map <leader>ud :UndotreeToggle<CR>

@@ -116,9 +116,9 @@ set ffs=unix,dos,mac
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn backup off, since most stuff is in SVN, git etc. anyway...
-"set nobackup
-"set nowb
-"set noswapfile
+set nobackup
+set nowb
+set noswapfile
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -194,10 +194,10 @@ nnoremap <silent> <leader>q :bdelete<CR>
 nnoremap <silent> <leader>Q :bdelete!<CR>
 
 " Window
-map <leader>sl :set splitright<CR>:vsplit <C-r>=expand("%:p:h")<cr>/
-map <leader>sh :set nosplitright<CR>:vsplit <C-r>=expand("%:p:h")<cr>/
-map <leader>sj :set nosplitbelow<CR>:split <C-r>=expand("%:p:h")<cr>/
-map <leader>sk :set splitbelow<CR>:split <C-r>=expand("%:p:h")<cr>/
+map <leader>sl :set splitright<CR>:vsplit<CR>
+map <leader>sh :set nosplitright<CR>:vsplit<CR>
+map <leader>sj :set nosplitbelow<CR>:split<CR>
+map <leader>sk :set splitbelow<CR>:split<CR>
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -220,6 +220,16 @@ map <leader>tc :tabclose<cr>
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" Let's save undo info!
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
+endif
+if !isdirectory($HOME."/.vim/undodir")
+    call mkdir($HOME."/.vim/undodir", "", 0700)
+endif
+set undodir=~/.vim/undodir
+set undofile
 
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
