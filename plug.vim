@@ -34,6 +34,9 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Setting & Key Mapping
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-markdown
+set nofoldenable
+
 " LeaderF
 map <leader>P :Leaderf file<CR>
 map <leader>p :Leaderf mru<CR>
