@@ -42,7 +42,7 @@ map <leader>p :Leaderf mru<CR>
 map gy :Goyo<CR>
 
 " NERDTree
-map <leader>n :NERDTreeToggle<CR>
+map <leader>f :NERDTreeToggle<CR>
 map <leader>nf :NERDTreeFind<CR>
 map <leader>nn :NERDTreeCWD<CR>
 " show line numbers
@@ -79,7 +79,7 @@ nmap <leader>ms :MarkdownPreviewStop<CR>
 noremap <F6> :%!npx md-padding<CR>
 
 " tagbar
-nmap <F8> :TagbarToggle<CR>
+nmap <leader>[ :TagbarToggle<CR>
 let g:tagbar_type_markdown = {
         \ 'ctagstype' : 'markdown',
         \ 'kinds' : [
