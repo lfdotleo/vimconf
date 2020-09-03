@@ -27,7 +27,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'f
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
-Plug 'vimwiki/vimwiki'
+"Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -35,14 +35,16 @@ call plug#end()
 " => Plugin Setting & Key Mapping
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " LeaderF
-map <leader>p :Leaderf file<CR>
-map <leader>f :Leaderf mru<CR>
+map <leader>P :Leaderf file<CR>
+map <leader>p :Leaderf mru<CR>
 
 " Goyo
 map gy :Goyo<CR>
 
 " NERDTree
-map ff :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
+map <leader>nf :NERDTreeFind<CR>
+map <leader>nn :NERDTreeCWD<CR>
 " show line numbers
 let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
@@ -78,6 +80,14 @@ noremap <F6> :%!npx md-padding<CR>
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
+let g:tagbar_type_markdown = {
+        \ 'ctagstype' : 'markdown',
+        \ 'kinds' : [
+                \ 'h:headings',
+        \ ],
+    \ 'sort' : 0
+\ }
+
 
 " airline
 let g:airline#extensions#tabline#enabled=1
