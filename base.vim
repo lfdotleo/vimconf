@@ -37,8 +37,8 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 "set scrolloff=7
 
 " Avoid garbled characters in Chinese language windows OS
-let $LANG='en'
-set langmenu=en
+"let $LANG='en'
+"set langmenu=en
 
 " Turn on the Wild menu
 set wildmenu
@@ -104,9 +104,9 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf-8
-set fileencodings=ucs-bom,utf-8,latin1,gb18030,gbk,gb2312,cp936
-set termencoding=utf-8
+set encoding=utf8
+set fileencodings=utf8,ucs-bom,latin1,gb18030,gbk,gb2312,cp936
+set termencoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -174,10 +174,10 @@ noremap <C-a> 0
 noremap <C-i> ^
 noremap <C-n> $
 tmap <leader>t <C-\><C-n>
-map Q :w<CR>
+map R :w<CR>
 map X :q<CR>
 map S <nop>
-map R :source $MYVIMRC<CR>
+map zs :source $MYVIMRC<CR>
 map J 5j
 map K 5k
 
@@ -190,7 +190,7 @@ nnoremap <silent> <leader>bl :ls<CR>
 nnoremap <silent> <leader>be :enew<CR>
 nnoremap <silent> <leader>l :bnext<CR>
 nnoremap <silent> <leader>h :bprevious<CR>
-nnoremap <silent> <leader>q :bdelete<CR>
+nnoremap Q :bd<CR>
 nnoremap <silent> <leader>Q :bdelete!<CR>
 
 " Window

@@ -14,6 +14,7 @@ Plug 'ybian/smartim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'majutsushi/tagbar'
 Plug 'mbbill/undotree'
@@ -101,3 +102,83 @@ let g:airline#extensions#tabline#buffer_nr_show=1
 
 " undo
 map <leader>ud :UndotreeToggle<CR>
+
+" coc
+let g:coc_global_extensions = [
+    \ 'coc-css',
+    \ 'coc-diagnostic',
+    \ 'coc-explorer',
+    \ 'coc-gitignore',
+    \ 'coc-html',
+    \ 'coc-json',
+    \ 'coc-lists',
+    \ 'coc-prettier',
+    \ 'coc-pyright',
+    \ 'coc-python',
+    \ 'coc-snippets',
+    \ 'coc-sourcekit',
+    \ 'coc-stylelint',
+    \ 'coc-syntax',
+    \ 'coc-tasks',
+    \ 'coc-todolist',
+    \ 'coc-translator',
+    \ 'coc-tslint-plugin',
+    \ 'coc-tsserver',
+    \ 'coc-vimlsp',
+    \ 'coc-vetur',
+    \ 'coc-yaml',
+    \ 'coc-yank']
+
+set updatetime=100
+set shortmess+=c
+
+    " Tab 补全
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <silent><expr> <C-o> coc#refresh()
+
+    " 回车补全
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
+
+    " 跳转错误
+nmap <silent> <leader>- <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>= <Plug>(coc-diagnostic-next)
+
+    " 跳转到变量定义
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+    " 查看文档
+nnoremap <silent> gh :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+    " 重命名变量
+nmap <leader>rn <Plug>(coc-rename)
+
+    " 代码格式化
+" Formatting selected code.
+xmap <leader>F  <Plug>(coc-format-selected)
+nmap <leader>F  <Plug>(coc-format-selected)
+
