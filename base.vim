@@ -173,10 +173,12 @@ map <silent> <leader><cr> :noh<cr>
 noremap <C-a> 0
 noremap <C-i> ^
 noremap <C-n> $
+noremap <C-d> 5<C-e>
+noremap <C-u> 5<C-y>
 tmap <leader>t <C-\><C-n>
-map R :w<CR>
+map S :w<CR>
 map X :q<CR>
-map S <nop>
+map Q <nop>
 map zs :source $MYVIMRC<CR>
 map J 5j
 map K 5k
