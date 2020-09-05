@@ -45,7 +45,7 @@ if exists('g:plugs["vim-markdown"]')
   let g:vim_markdown_conceal                   = 0
   let g:vim_markdown_edit_url_in               = 'tab'
   let g:vim_markdown_folding_disabled          = 0
-  let g:vim_markdown_folding_level             = 1
+  let g:vim_markdown_folding_level             = 2
   let g:vim_markdown_follow_anchor             = 1
   let g:vim_markdown_frontmatter               = 1
   let g:vim_markdown_frontmatter               = 1
@@ -71,7 +71,8 @@ map gy :Goyo<CR>
 
 " NERDTree
 map <leader>f :NERDTreeToggle<CR>
-map <leader>nn :NERDTreeFind<CR>
+map <leader>nf :NERDTreeFind<CR>
+map <leader>nn :NERDTree<CR>
 " show line numbers
 let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
