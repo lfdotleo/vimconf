@@ -1,0 +1,50 @@
+:set keep-english-in-normal
+:set keep-english-in-normal-and-restore-in-insert
+:set relativenumber
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases 
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" Show matching brackets when text indicator is over them
+set showmatch
+
+
+
+
+let mapleader=" "
+noremap S :w
+" Disable highlight when <leader><cr> is pressed
+map <silent> <leader><cr> :noh<cr>
+
+" Replace keymap, quick click
+noremap <C-i> ^
+noremap <C-n> $
+noremap <C-d> 5<C-e>
+noremap <C-u> 5<C-y>
+map S :w<CR>
+map Q :q<CR>
+map J 5j
+map K 5k
+
+" Window
+map <leader>wl :set splitright<CR>:vsplit<CR>
+map <leader>wh :set nosplitright<CR>:vsplit<CR>
+map <leader>wj :set nosplitbelow<CR>:split<CR>
+map <leader>wk :set splitbelow<CR>:split<CR>
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Tab
+
+map <leader>to :tabonly<cr>
