@@ -170,7 +170,6 @@ endfunction
 map <silent> <leader><cr> :noh<cr>
 
 " Replace keymap, quick click
-noremap <C-a> 0
 noremap <C-i> ^
 noremap <C-n> $
 noremap <C-d> 5<C-e>
@@ -178,7 +177,6 @@ noremap <C-u> 5<C-y>
 tmap <leader>t <C-\><C-n>
 map S :w<CR>
 map X :q<CR>
-map Q <nop>
 map zs :source $MYVIMRC<CR>
 map J 5j
 map K 5k
@@ -196,18 +194,18 @@ nnoremap Q :bd<CR>
 nnoremap <silent> <leader>Q :bdelete!<CR>
 
 " Window
-map <leader>sl :set splitright<CR>:vsplit<CR>
-map <leader>sh :set nosplitright<CR>:vsplit<CR>
-map <leader>sj :set nosplitbelow<CR>:split<CR>
-map <leader>sk :set splitbelow<CR>:split<CR>
+map <leader>wl :set splitright<CR>:vsplit<CR>
+map <leader>wh :set nosplitright<CR>:vsplit<CR>
+map <leader>wj :set nosplitbelow<CR>:split<CR>
+map <leader>wk :set splitbelow<CR>:split<CR>
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-map <leader>s, <C-w>t<C-w>H
-map <leader>s. <C-w>t<C-w>K
+map <leader>w, <C-w>t<C-w>H
+map <leader>w. <C-w>t<C-w>K
 
 map <leader><Up> :res +5<CR>
 map <leader><Down> :res -5<CR>
