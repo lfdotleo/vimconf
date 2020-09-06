@@ -187,7 +187,7 @@ map K 5k
 " :bd close the file buffer
 " :b<number> switch number buffer
 nnoremap <silent> <leader>bl :ls<CR>
-nnoremap <silent> <leader>be :enew<CR>
+nnoremap <silent> <leader>bn :enew<CR>
 nnoremap <silent> <leader>l :bnext<CR>
 nnoremap <silent> <leader>h :bprevious<CR>
 nnoremap Q :bd<CR>
