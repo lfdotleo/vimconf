@@ -177,7 +177,8 @@ noremap <C-u> 5<C-y>
 tmap <leader>t <C-\><C-n>
 map S :w<CR>
 map X :q<CR>
-map zs :source $MYVIMRC<CR>
+noremap R :source $MYVIMRC<CR>
+noremap r <nop>
 map J 5j
 map K 5k
 
