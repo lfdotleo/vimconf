@@ -197,8 +197,8 @@ nnoremap <silent> <leader>Q :bdelete!<CR>
 " Window
 map <leader>wl :set splitright<CR>:vsplit<CR>
 map <leader>wh :set nosplitright<CR>:vsplit<CR>
-map <leader>wj :set nosplitbelow<CR>:split<CR>
-map <leader>wk :set splitbelow<CR>:split<CR>
+map <leader>wk :set nosplitbelow<CR>:split<CR>
+map <leader>wj :set splitbelow<CR>:split<CR>
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -215,6 +215,7 @@ map <leader><Right> :vertical resize-5<CR>
 
 " Tab
 map <leader>tn :tabnew<CR>
+map <leader>ts :tab split<CR>
 
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
@@ -235,3 +236,22 @@ set undofile
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+" You can use :tab split to full green, and use :tabclose exit full green
+" zoom in
+"function! Zoom()
+"    " check if is the zoomed state (tabnumber > 1 && window == 1)
+"    if tabpagenr('$') > 1 && tabpagewinnr(tabpagenr(), '$') == 1
+"        let l:cur_winview = winsaveview()
+"        let l:cur_bufname = bufname('')
+"        tabclose
+"
+"        " restore the view
+"        if l:cur_bufname == bufname('')
+"            call winrestview(cur_winview)
+"        endif
+"    else
+"        tab split
+"    endif
+"endfunction
+"
+"nmap <leader>z :call Zoom()<CR>
