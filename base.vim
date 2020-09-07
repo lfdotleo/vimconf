@@ -214,7 +214,7 @@ map <leader><Left> :vertical resize+5<CR>
 map <leader><Right> :vertical resize-5<CR>
 
 " Tab
-map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>/
+map <leader>tn :tabnew<CR>
 
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
