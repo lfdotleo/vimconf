@@ -187,12 +187,14 @@ map K 5k
 " :enew create a new buffer
 " :bd close the file buffer
 " :b<number> switch number buffer
+" C-^ go to laster open buffer
 nnoremap <silent> <leader>bl :ls<CR>
 nnoremap <silent> <leader>bn :enew<CR>
 nnoremap <silent> <leader>l :bnext<CR>
 nnoremap <silent> <leader>h :bprevious<CR>
 nnoremap Q :bd<CR>
 nnoremap <silent> <leader>Q :bdelete!<CR>
+nnoremap <silent> <leader>o <C-^>
 
 " Window
 map <leader>wl :set splitright<CR>:vsplit<CR>
