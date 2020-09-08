@@ -175,6 +175,8 @@ noremap <C-n> $
 noremap <C-d> 5<C-e>
 noremap <C-u> 5<C-y>
 tmap <leader>t <C-\><C-n>
+" C-^ go to alternate file
+nnoremap <silent> <leader>o <C-^>
 map S :w<CR>
 map X :q<CR>
 noremap R :source $MYVIMRC<CR>
@@ -187,14 +189,12 @@ map K 5k
 " :enew create a new buffer
 " :bd close the file buffer
 " :b<number> switch number buffer
-" C-^ go to laster open buffer
 nnoremap <silent> <leader>bl :ls<CR>
 nnoremap <silent> <leader>bn :enew<CR>
 nnoremap <silent> <leader>l :bnext<CR>
 nnoremap <silent> <leader>h :bprevious<CR>
 nnoremap Q :bd<CR>
 nnoremap <silent> <leader>Q :bdelete!<CR>
-nnoremap <silent> <leader>o <C-^>
 
 " Window
 map <leader>wl :set splitright<CR>:vsplit<CR>
