@@ -71,7 +71,7 @@ map gy :Goyo<CR>
 
 " NERDTree
 map <leader>f :NERDTreeToggle<CR>
-map <leader>nf :NERDTreeFind<CR>
+map <leader>nf :NERDTreeFind<CR>zz
 map <leader>nn :NERDTree<CR>
 " show line numbers
 let NERDTreeShowLineNumbers=1
