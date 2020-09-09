@@ -25,8 +25,8 @@ noremap S :w
 map <silent> <leader><cr> :noh<cr>
 
 " Replace keymap, quick click
-noremap <C-i> ^
-noremap <C-n> $
+noremap <C-n> ^
+noremap <C-m> $
 noremap <C-d> 5<C-e>
 noremap <C-u> 5<C-y>
 map S :w<CR>
