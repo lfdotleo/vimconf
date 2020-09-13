@@ -170,8 +170,8 @@ endfunction
 map <silent> <leader><cr> :noh<cr>
 
 " Replace keymap, quick click
-nnoremap <C-n> ^
-nnoremap <C-m> $
+noremap <C-n> ^
+noremap <C-m> $
 noremap <C-d> 5<C-e>
 noremap <C-u> 5<C-y>
 tmap <leader>t <C-\><C-n>
