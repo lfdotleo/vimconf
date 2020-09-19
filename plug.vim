@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'junegunn/goyo.vim'
 
 Plug 'ybian/smartim'
+Plug 'ppwwyyxx/vim-PinyinSearch'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -201,4 +202,10 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>F  <Plug>(coc-format-selected)
 nmap <leader>F  <Plug>(coc-format-selected)
+
+
+" pinyinSearch
+let g:PinyinSearch_Dict = $HOME . '/.vim/plugged/vim-PinyinSearch/plugin/PinyinSearch.dict'
+nnoremap ; :call PinyinSearch()<CR>
+"noremap <leader>pn :call PinyinNext()<CR>
 
