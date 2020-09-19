@@ -184,6 +184,12 @@ noremap r <nop>
 map J 5j
 map K 5k
 
+inoremap <C-a> <Esc>I
+inoremap <C-e> <Esc>A
+inoremap <C-n> <Esc>ji
+inoremap <C-p> <Esc>ki
+inoremap <C-k> <Esc>C
+
 " Buffer
 " :e open the file buffer
 " :enew create a new buffer
