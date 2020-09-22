@@ -107,7 +107,7 @@ let g:mkdp_open_to_the_world = 1
 noremap <F6> :%!npx md-padding<CR>
 
 " tagbar
-nmap <leader>j :TagbarToggle<CR><C-w>l
+nmap <leader>j :TagbarToggle<CR>
 let g:tagbar_type_markdown = {
         \ 'ctagstype' : 'markdown',
         \ 'kinds' : [

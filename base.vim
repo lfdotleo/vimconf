@@ -174,6 +174,7 @@ noremap <C-n> ^
 noremap <C-m> $
 noremap <C-d> 5<C-e>
 noremap <C-u> 5<C-y>
+" terminal to normal
 tmap <leader>t <C-\><C-n>
 " C-^ go to alternate file
 nnoremap <silent> <leader>o <C-^>
