@@ -127,7 +127,7 @@ set list
 set listchars=tab:▸\ ,trail:▫
 
 " Display relative line number
-set relativenumber
+"set relativenumber
 
 " Use spaces instead of tabs
 set expandtab
