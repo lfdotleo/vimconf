@@ -126,6 +126,9 @@ set noswapfile
 set list
 set listchars=tab:▸\ ,trail:▫
 
+" Display line number
+set nu
+
 " Display relative line number
 "set relativenumber
 
