@@ -182,7 +182,6 @@ nnoremap <silent> <leader>o <C-^>
 map S :w<CR>
 map X :q<CR>
 noremap R :source $MYVIMRC<CR>
-noremap r <nop>
 map J 5j
 map K 5k
 
