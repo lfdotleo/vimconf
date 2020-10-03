@@ -11,6 +11,7 @@ Plug 'junegunn/goyo.vim'
 
 Plug 'ybian/smartim'
 Plug 'ppwwyyxx/vim-PinyinSearch'
+Plug 'easymotion/vim-easymotion'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -209,3 +210,8 @@ let g:PinyinSearch_Dict = $HOME . '/.vim/plugged/vim-PinyinSearch/PinyinSearch.d
 nnoremap \ :call PinyinSearch()<CR>
 "noremap <leader>pn :call PinyinNext()<CR>
 
+" vim-easymotion
+
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+let g:EasyMotion_smartcase = 1
+nmap <leader>; <Plug>(easymotion-overwin-f)
