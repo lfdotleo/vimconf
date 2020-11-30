@@ -33,6 +33,7 @@ map S :w<CR>
 map Q :q<CR>
 map J 5j
 map K 5k
+noremap zv f{%mt``V`t
 
 " Window
 map <leader>wl :set splitright<CR>:vsplit<CR>
