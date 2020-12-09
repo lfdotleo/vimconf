@@ -34,6 +34,11 @@ map Q :q<CR>
 map J 5j
 map K 5k
 noremap zv f{V%
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gb :action JumpToLastChange<CR>
+nnoremap R :action RenameElement<CR>
 
 " Window
 map <leader>wl :set splitright<CR>:vsplit<CR>
