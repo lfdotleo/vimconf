@@ -9,6 +9,9 @@
 "Sets how many lines of history VIM has to remember
 set history=500
 
+"Treat numbers starting with 0 as decimal
+set nrformats=
+
 " Eliminating delays on ESC in vim and zsh, See https://www.johnhawthorn.com/2012/09/vi-escape-delays/
 set timeoutlen=1000 ttimeoutlen=0
 
