@@ -1,10 +1,8 @@
-:set keep-english-in-normal
-:set keep-english-in-normal-and-restore-in-insert
 "set relativenumber
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -29,15 +27,22 @@ noremap <C-n> ^
 noremap <C-m> $
 noremap <C-d> 5<C-e>
 noremap <C-u> 5<C-y>
+noremap zv f{V%
 map S :w<CR>
 map Q :q<CR>
 map J 5j
 map K 5k
-noremap zv f{V%
+map zy "+y
+map zp "+p
+map <A-v> <C-v>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gs :action GotoSuperMethod<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gb :action JumpToLastChange<CR>
+noremap <leader>e :action SearchEverywhere<CR>
+noremap <leader>g :action FindInPath<CR>
+noremap <leader>s :action FileStructurePopup<CR>
+noremap <leader>a :action GotoAction<CR>
 nnoremap R :action RenameElement<CR>
 
 " Window
@@ -54,3 +59,5 @@ map <C-l> <C-W>l
 " Tab
 
 map <leader>to :tabonly<cr>
+
+set keep-english-in-normal-and-restore-in-insert
