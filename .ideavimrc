@@ -43,6 +43,15 @@ noremap <leader>e :action SearchEverywhere<CR>
 noremap <leader>g :action FindInPath<CR>
 noremap <leader>s :action FileStructurePopup<CR>
 noremap <leader>a :action GotoAction<CR>
+noremap <leader>` :action SelectInProjectView<CR>
+noremap <leader>; :action emacsIDEAs.AceJumpWord<CR>
+noremap <leader>d :action ChooseDebugConfiguration<CR>
+noremap <leader>h :action HideAllWindows<CR>
+noremap [[ :action MethodUp<CR>
+noremap ]] :action MethodDown<CR>
+noremap <leader>j :action GotoNextError<CR>
+noremap <leader>k :action GotoPreviousError<CR>
+noremap gy :action CopyReference<CR>
 nnoremap R :action RenameElement<CR>
 
 " Window
