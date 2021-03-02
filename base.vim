@@ -178,10 +178,8 @@ vnoremap zy "+y
 noremap zv f{V%
 
 " Replace keymap, quick click
-noremap <C-n> ^
-noremap <C-m> $
-noremap <C-d> 5<C-e>
-noremap <C-u> 5<C-y>
+noremap 0 ^
+noremap ^ 0
 " terminal to normal
 tmap <leader>t <C-\><C-n>
 " C-^ go to alternate file
@@ -189,8 +187,6 @@ nnoremap <silent> <leader>o <C-^>
 map S :w<CR>
 map X :q<CR>
 noremap R :source $MYVIMRC<CR>
-map J 5j
-map K 5k
 
 inoremap <C-a> <Esc>I
 inoremap <C-e> <Esc>A

@@ -23,15 +23,12 @@ noremap S :w
 map <silent> <leader><cr> :noh<cr>
 
 " Replace keymap, quick click
-noremap <C-n> ^
-noremap <C-m> $
-noremap <C-d> 5<C-e>
-noremap <C-u> 5<C-y>
+noremap 0 ^
+noremap ^ 0
+
 noremap zv f{V%
 map S :w<CR>
 map Q :q<CR>
-map J 5j
-map K 5k
 map zy "+y
 map zp "+p
 map <A-v> <C-v>
