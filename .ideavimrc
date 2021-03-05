@@ -32,6 +32,8 @@ map Q :q<CR>
 map zy "+y
 map zp "+p
 map <A-v> <C-v>
+noremap <C-O> :action Back<CR>
+noremap <C-I> :action Forward<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gs :action GotoSuperMethod<CR>
 nnoremap gi :action GotoImplementation<CR>
