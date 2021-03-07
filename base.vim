@@ -173,21 +173,24 @@ endfunction
 "========================================================== Key Mapping ==========================================================
 
 " Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+noremap <silent> <leader><cr> :noh<cr>
 vnoremap zy "+y
 noremap zv f{V%
 
 " Replace keymap, quick click
 noremap 0 ^
 noremap ^ 0
+
 " terminal to normal
 tmap <leader>t <C-\><C-n>
+
 " C-^ go to alternate file
 nnoremap <silent> <leader>o <C-^>
 map S :w<CR>
 map X :q<CR>
 noremap R :source $MYVIMRC<CR>
 
+" input model key mapping
 inoremap <C-a> <Esc>I
 inoremap <C-e> <Esc>A
 inoremap <C-n> <Esc>ji
@@ -201,8 +204,10 @@ inoremap <C-k> <Esc>C
 " :b<number> switch number buffer
 nnoremap <silent> <leader>bl :ls<CR>
 nnoremap <silent> <leader>bn :enew<CR>
-nnoremap <silent> <leader>l :bnext<CR>
-nnoremap <silent> <leader>h :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]B :blast<CR>
+nnoremap <silent> [B :bfirst<CR>
 nnoremap Q :bd<CR>
 nnoremap <silent> <leader>Q :bdelete!<CR>
 
@@ -231,6 +236,11 @@ map <leader>ts :tab split<CR>
 
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
+
+nnoremap <silent> ]t :tabnext<CR>
+nnoremap <silent> [t :tabprevious<CR>
+nnoremap <silent> ]T :tablast<CR>
+nnoremap <silent> [T :tabfirst<CR>
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>

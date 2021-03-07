@@ -46,6 +46,7 @@ noremap <leader>` :action SelectInProjectView<CR>
 noremap <leader>; :action emacsIDEAs.AceJumpWord<CR>
 noremap <leader>d :action ChooseDebugConfiguration<CR>
 noremap <leader>h :action HideAllWindows<CR>
+noremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 noremap [[ :action MethodUp<CR>
 noremap ]] :action MethodDown<CR>
 noremap <leader>j :action GotoNextError<CR>
@@ -66,6 +67,10 @@ map <C-l> <C-W>l
 
 " Tab
 
-map <leader>to :tabonly<cr>
+nnoremap <leader>to :tabonly<cr>
+nnoremap <silent> ]t :tabnext<CR>
+nnoremap <silent> [t :tabprevious<CR>
+nnoremap <silent> ]T :tablast<CR>
+nnoremap <silent> [T :tabfirst<CR>
 
 set keep-english-in-normal-and-restore-in-insert
