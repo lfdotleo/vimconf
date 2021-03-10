@@ -204,6 +204,7 @@ inoremap <C-k> <Esc>C
 " :b<number> switch number buffer
 nnoremap <silent> <leader>bl :ls<CR>
 nnoremap <silent> <leader>bn :enew<CR>
+nnoremap <silent> <leader>bo :%bd <bar> e# <bar> bd#<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]B :blast<CR>
