@@ -240,6 +240,7 @@ map <leader>ts :tab split<CR>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 
+"nnoremap <silent> g<Tab> jump to last tab
 nnoremap <silent> ]t :tabnext<CR>
 nnoremap <silent> [t :tabprevious<CR>
 nnoremap <silent> ]T :tablast<CR>
