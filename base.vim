@@ -202,15 +202,17 @@ inoremap <C-k> <Esc>C
 " :enew create a new buffer
 " :bd close the file buffer
 " :b<number> switch number buffer
-nnoremap <silent> <leader>bl :ls<CR>
 nnoremap <silent> <leader>bn :enew<CR>
-nnoremap <silent> <leader>bo :%bd <bar> e# <bar> bd#<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]B :blast<CR>
 nnoremap <silent> [B :bfirst<CR>
+" <C-^> swap buffer
 nnoremap Q :bd<CR>
 nnoremap <silent> <leader>Q :bdelete!<CR>
+nnoremap <silent> <leader>ba :bufdo bd<CR>
+nnoremap <silent> <leader>bo :%bd <bar> e# <bar> bd#<CR>
+nnoremap <silent> <leader>bl :ls<CR>
 
 " Window
 map <leader>wl :set splitright<CR>:vsplit<CR>
