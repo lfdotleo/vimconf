@@ -282,3 +282,5 @@ endfunction
 
 nmap <leader>z :call Zoom()<CR>
 
+" format json
+com! FormatJSON %!python3 -m json.tool
