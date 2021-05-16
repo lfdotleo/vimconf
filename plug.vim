@@ -207,7 +207,7 @@ nmap <leader>F  <Plug>(coc-format-selected)
 
 " pinyinSearch
 let g:PinyinSearch_Dict = $HOME . '/.vim/plugged/vim-PinyinSearch/PinyinSearch.dict'
-nnoremap \ :call PinyinSearch()<CR>
+noremap \ :call PinyinSearch()<CR>
 "noremap <leader>pn :call PinyinNext()<CR>
 
 " vim-easymotion
