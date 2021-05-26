@@ -219,6 +219,7 @@ map <leader>wl :set splitright<CR>:vsplit<CR>
 map <leader>wh :set nosplitright<CR>:vsplit<CR>
 map <leader>wk :set nosplitbelow<CR>:split<CR>
 map <leader>wj :set splitbelow<CR>:split<CR>
+map <leader>wo :only<CR>
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
