@@ -193,8 +193,6 @@ noremap R :source $MYVIMRC<CR>
 " input model key mapping
 inoremap <C-a> <Esc>I
 inoremap <C-e> <Esc>A
-inoremap <C-n> <Esc>ji
-inoremap <C-p> <Esc>ki
 inoremap <C-k> <Esc>C
 
 " Buffer
