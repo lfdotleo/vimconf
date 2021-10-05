@@ -189,12 +189,14 @@ nnoremap <silent> <leader>o <C-^>
 map S :w<CR>
 map X :q<CR>
 noremap R :source $MYVIMRC<CR>
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
 
 " input model key mapping
 inoremap <C-a> <Esc>I
 inoremap <C-e> <Esc>A
-inoremap <C-n> <Esc>ji
-inoremap <C-p> <Esc>ki
 inoremap <C-k> <Esc>C
 
 " Buffer
