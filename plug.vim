@@ -26,6 +26,7 @@ Plug 'w0rp/ale'
 
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'itchyny/vim-cursorword'
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
