@@ -156,6 +156,10 @@ set wrap "Wrap lines
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
+
+" Auto pastetoggle
+inoremap <C-v> <esc>:set paste<cr>a<C-R>+<esc>:set nopaste<cr>
+
 " Always show the status line
 set laststatus=2
 
