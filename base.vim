@@ -179,6 +179,9 @@ endfunction
 " Disable highlight when <leader><cr> is pressed
 noremap <silent> <leader><cr> :noh<cr>
 vnoremap zy "+y
+noremap zyy 0v$h"+y
+noremap zp "+p
+noremap zP "+P
 noremap zv f{V%
 
 " Replace keymap, quick click
