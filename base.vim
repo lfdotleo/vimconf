@@ -186,8 +186,6 @@ noremap zp "+p
 noremap zP "+P
 
 noremap zv f{V%
-noremap <CR> o<Esc>
-noremap <S-CR> O<Esc>
 
 " Replace keymap, quick click
 noremap 0 ^
