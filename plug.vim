@@ -20,7 +20,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'majutsushi/tagbar'
 Plug 'mbbill/undotree'
-Plug 'mhinz/vim-startify'
+"Plug 'mhinz/vim-startify'
 
 Plug 'w0rp/ale'
 
