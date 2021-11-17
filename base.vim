@@ -181,9 +181,9 @@ noremap <silent> <leader><cr> :noh<cr>
 
 " copy & paste
 vnoremap zy "+y
-noremap zyy $v^"+y
-noremap zp "+p
-noremap zP "+P
+nnoremap zyy $v^"+y
+nnoremap zp "+p
+nnoremap zP "+P
 
 noremap zv f{V%
 
