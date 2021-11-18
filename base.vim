@@ -296,6 +296,6 @@ endfunction
 nmap <leader>z :call Zoom()<CR>
 
 " format json
-com! FormatJSON %!python3 -m json.tool
+com! FormatJSON %!python3 -m json.tool --no-ensure-ascii
 " format xml
 com! FormatXML %!xmllint --format -
