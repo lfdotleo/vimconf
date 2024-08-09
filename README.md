@@ -2,10 +2,10 @@
 
 `cd  && git clone  https://github.com/lfdotleo/vimconf.git && cd vimconf && ./install.sh`
 
-## Dependence
+## Dependencies　　
 
 1. tagbar depends on ctags
-2. smartim depends on im-select
+2. smartim depends on im-select, install via brew
 
 ## Optition
 
